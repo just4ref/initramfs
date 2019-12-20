@@ -1,0 +1,7 @@
+ref:
+
+gen_init_cpio gpiofile.xx |gzip -9 -n > initramfs.cpio.gz
+
+gunzip -dc initramfs.cpio.gz |cpio -tv
+
+
